@@ -1,0 +1,213 @@
+## Python Basic Data Structures and Access Methods:
+
+## 1. Lists:
+   - Definition: Lists are ordered collections of items, which can be of any data type. They are mutable, meaning their elements can be changed after creation.
+   - Access Methods:
+     - Indexing: Access individual elements using their index. Indexing starts from 0 for the first element.
+       ```python
+       my_list = [1, 2, 3, 4, 5]
+       print(my_list[0])  # Output: 1
+       print(my_list[2])  # Output: 3
+       ```
+     - Slicing: Extract a portion of the list using slicing notation `start:stop:step`. This returns a new list.
+       ```python
+       my_list = [1, 2, 3, 4, 5]
+       print(my_list[1:4])  # Output: [2, 3, 4]
+       ```
+     - Negative Indexing: Access elements from the end of the list using negative indices.
+       ```python
+       my_list = [1, 2, 3, 4, 5]
+       print(my_list[-1])  # Output: 5
+       ```
+     - List Methods: Python provides many built-in methods to manipulate lists such as `append()`, `insert()`, `pop()`, `remove()`, `sort()`, `reverse()`, etc.
+       ```python
+       my_list = [1, 2, 3, 4, 5]
+       my_list.append(6)  # Adds 6 to the end of the list
+       my_list.insert(2, 7)  # Inserts 7 at index 2
+       my_list.pop()  # Removes and returns the last element
+       my_list.remove(3)  # Removes the first occurrence of 3
+       my_list.sort()  # Sorts the list in ascending order
+       ```
+
+## 2. Tuples:
+   - Definition: Tuples are similar to lists but are immutable, meaning their elements cannot be changed after creation.
+   - Access Methods:
+     - Indexing: Same as lists, access elements using their indices.
+       ```python
+       my_tuple = (1, 2, 3, 4, 5)
+       print(my_tuple[0])  # Output: 1
+       ```
+     - Slicing: Similar to lists, extract a portion of the tuple using slicing notation.
+       ```python
+       my_tuple = (1, 2, 3, 4, 5)
+       print(my_tuple[1:4])  # Output: (2, 3, 4)
+       ```
+
+## 3. Dictionaries:
+   - Definition: Dictionaries are unordered collections of key-value pairs. They are mutable and indexed by unique keys.
+   - Access Methods:
+     - Access by Key: Access values using their corresponding keys.
+       ```python
+       my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+       print(my_dict['name'])  # Output: John
+       ```
+     - Dictionary Methods: Python provides methods such as `keys()`, `values()`, `items()`, etc., to access keys, values, and key-value pairs.
+       ```python
+       my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+       print(my_dict.keys())  # Output: dict_keys(['name', 'age', 'city'])
+       ```
+
+## 4. Sets:
+   - Definition: Sets are unordered collections of unique elements. They are mutable but do not support duplicate elements.
+   - Access Methods:
+     - Access by Element: Check if an element exists in the set using the `in` keyword.
+       ```python
+       my_set = {1, 2, 3, 4, 5}
+       print(3 in my_set)  # Output: True
+       ```
+     - Set Methods: Python provides methods such as `add()`, `remove()`, `union()`, `intersection()`, etc., for set operations.
+       ```python
+       my_set = {1, 2, 3}
+       my_set.add(4)  # Adds 4 to the set
+       my_set.remove(2)  # Removes 2 from the set
+       ```
+## 5. Strings:
+   - Definition: Strings are immutable sequences of characters. They can be accessed and manipulated using various methods.
+   - Access Methods:
+     - Indexing: Access individual characters using their indices.
+       ```python
+       my_string = "Hello"
+       print(my_string[0])  # Output: H
+       ```
+     - Slicing: Extract substrings using slicing notation.
+       ```python
+       my_string = "Hello"
+       print(my_string[1:3])  # Output: el
+       ```
+     - String Methods: Python provides numerous methods to manipulate strings such as `upper()`, `lower()`, `split()`, `join()`, `strip()`, `replace()`, etc.
+       ```python
+       my_string = "Hello, world"
+       print(my_string.upper())  # Output: HELLO, WORLD
+       ```
+
+## 6. Arrays:
+   - Definition: Arrays in Python are data structures used to store collections of elements. Unlike lists, arrays can only store elements of the same data type. Arrays are created using the `array` module.
+   - Access Methods:
+       1. Indexing: Access individual elements using their indices.
+          ```python
+          from array import array
+          arr = array('i', [1, 2, 3, 4, 5])
+          print(arr[0])  # Output: 1
+          ```
+      
+      3. Slicing: Extract portions of arrays using slicing notation.
+         ```python
+         from array import array
+      
+         arr = array('i', [1, 2, 3, 4, 5])
+         print(arr[1:3])  # Output: array('i', [2, 3])
+         ```
+      
+      4. Negative Indexing: Access elements from the end of arrays using negative indices.
+         ```python
+         from array import array
+      
+         arr = array('i', [1, 2, 3, 4, 5])
+         print(arr[-1])  # Output: 5
+         ```
+      
+      5. Methods: Use built-in methods such as `append()`, `extend()`, `insert()`, `remove()`, `pop()`, etc., to manipulate arrays.
+         ```python
+         from array import array
+      
+         arr = array('i', [1, 2, 3, 4, 5])
+         arr.append(6)
+         print(arr)  # Output: array('i', [1, 2, 3, 4, 5, 6])
+         ```
+
+## Difference between Data Structures:
+
+| Data Structure | Description                              | Mutable | Indexed | Ordered | Unique Elements |
+|----------------|------------------------------------------|---------|---------|---------|-----------------|
+| Lists          | Mutable sequence of elements             | Yes     | Yes     | Yes     | No              |
+| Tuples         | Immutable sequence of elements           | No      | Yes     | Yes     | No              |
+| Sets           | Collection of unique elements            | Yes     | No      | No      | Yes             |
+| Dictionaries   | Collection of key-value pairs            | Yes     | Yes     | No      | Keys            |
+| Strings        | Immutable sequence of characters         | No      | Yes     | Yes     | No              |
+| Arrays         | Homogeneous collection of elements       | Yes     | Yes     | Yes     | No              |
+
+
+### Access Methods Summary:
+   - Indexing: Access individual elements/characters using their indices.
+   - Slicing: Extract portions of sequences using slicing notation.
+   - Negative Indexing: Access elements/characters from the end of sequences using negative indices.
+   - Access by Key: Access values in dictionaries using their keys.
+   - Membership Test: Check if an element exists in sequences (lists, tuples, sets, strings) using the `in` keyword.
+   - Methods: Use built-in methods to manipulate and perform operations on sequences.
+
+These basic data structures in Python provide powerful ways to store and manipulate data, catering to various programming needs.
+
+## QUESTION TIME:
+
+**Question 1:** What is the difference between lists and tuples in Python?
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+The main difference between lists and tuples in Python is mutability. Lists are mutable, meaning their elements can be changed after creation, while tuples are immutable, meaning their elements cannot be changed after creation. Additionally, lists are denoted by square brackets `[ ]`, whereas tuples are denoted by parentheses `( )`.
+</details>
+
+**Question 2:** Write a Python program to count the frequency of each character in a given string.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+```python
+def count_characters(string):
+    char_freq = {}
+    for char in string:
+        if char in char_freq:
+            char_freq[char] += 1
+        else:
+            char_freq[char] = 1
+    return char_freq
+
+string = "hello"
+print(count_characters(string))  # Output: {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+```
+</details>
+
+**Question 3:** What is the purpose of using sets in Python?
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+Sets in Python are used to store unique elements. They are particularly useful when dealing with tasks that require unique elements or need to perform set operations such as union, intersection, difference, etc. Sets also provide efficient membership testing using the `in` keyword.
+</details>
+
+**Question 4:** Write a Python function to remove duplicates from a list.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+```python
+def remove_duplicates(lst):
+    return list(set(lst))
+
+my_list = [1, 2, 2, 3, 4, 4, 5]
+print(remove_duplicates(my_list))  # Output: [1, 2, 3, 4, 5]
+```
+</details>
+
+**Question 5:** Explain the difference between the `remove()` and `discard()` methods in Python sets.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+The `remove()` method in Python sets removes a specified element from the set. If the element is not present in the set, it raises a `KeyError`. On the other hand, the `discard()` method also removes a specified element from the set, but it does not raise any error if the element is not present.
+</details>
