@@ -8,7 +8,7 @@ Let me tell you, competitive programming is more than just a pastime—it's like
 
 ## What's Inside?
 
-### Python Cheatsheets and Crash Courses
+### [Python Cheatsheets and Crash Courses](https://github.com/gladsonchala/Competitive-Programming-with-Python/tree/main/Python)
 
 I've got your back with easy-to-digest cheatsheets and crash courses on Python. From the basics to the nitty-gritty, consider these your trusty companions on your coding journey.
 
