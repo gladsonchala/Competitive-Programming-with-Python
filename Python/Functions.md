@@ -1,0 +1,236 @@
+# Functions
+
+Functions are a fundamental building block in Python programming. They allow you to encapsulate reusable pieces of code and execute them with different inputs. This guide covers everything you need to know about functions in Python.
+
+---
+
+## 1. Definition and Syntax
+
+A function in Python is defined using the `def` keyword followed by the function name and parameters, if any. It consists of a block of code that performs a specific task.
+
+```python
+def my_function(parameter1, parameter2):
+    # Function body
+    # Code to execute
+    return result
+```
+
+- `def`: Keyword used to define a function.
+- `my_function`: Name of the function.
+- `parameter1`, `parameter2`: Input parameters (optional).
+- `return`: Keyword used to return a value (optional).
+
+---
+
+## 2. Calling a Function
+
+To execute a function, you need to call it by its name and pass the required arguments.
+
+```python
+# Calling the function
+result = my_function(value1, value2)
+```
+
+- `my_function`: Name of the function to call.
+- `value1`, `value2`: Arguments passed to the function.
+
+---
+
+## 3. Parameters and Arguments
+
+- **Parameters:** Variables defined in the function definition.
+- **Arguments:** Values passed to the function when calling it.
+
+```python
+def greet(name):
+    print("Hello, " + name + "!")
+
+# Calling the function with an argument
+greet("Alice")
+```
+
+In this example, `name` is a parameter, and `"Alice"` is an argument.
+
+---
+
+## 4. Return Statement
+
+A function can optionally return a value using the `return` statement. It can return multiple values as well.
+
+```python
+def add(a, b):
+    return a + b
+
+# Calling the function and storing the result
+result = add(3, 5)
+print(result)  # Output: 8
+```
+
+---
+
+## 5. Default Parameters
+
+You can specify default values for parameters, which are used if the function is called without providing a corresponding argument.
+
+```python
+def greet(name="World"):
+    print("Hello, " + name + "!")
+
+# Calling the function without providing an argument
+greet()  # Output: Hello, World!
+greet("Alice")  # Output: Hello, Alice!
+```
+
+---
+
+## 6. Variable Number of Arguments
+
+Python allows you to pass a variable number of arguments to a function using `*args` and `**kwargs`.
+
+```python
+def my_function(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+my_function(1, 2, 3, name="Alice", age=30)
+```
+
+- `*args`: Collects positional arguments as a tuple.
+- `**kwargs`: Collects keyword arguments as a dictionary.
+
+---
+
+## 7. Lambda Functions (Anonymous Functions)
+
+Lambda functions are small anonymous functions defined using the `lambda` keyword.
+
+```python
+# Lambda function to square a number
+square = lambda x: x**2
+print(square(5))  # Output: 25
+```
+
+---
+
+## 8. Scope of Variables
+
+Variables defined inside a function are local to that function, and they cannot be accessed outside it.
+
+```python
+def my_function():
+    x = 10
+    print(x)
+
+my_function()
+print(x)  # Error: NameError: name 'x' is not defined
+```
+
+---
+
+## 9. Recursive Functions
+
+A function can call itself. This is known as recursion.
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))  # Output: 120
+```
+
+---
+
+## 10. Documentation Strings (Docstrings)
+
+You can provide documentation for your functions using docstrings.
+
+```python
+def greet(name):
+    """
+    This function greets the user.
+    """
+    print("Hello, " + name + "!")
+```
+
+Docstrings are accessed using the `__doc__` attribute.
+
+```python
+print(greet.__doc__)
+```
+
+---
+
+## Conclusion
+
+Functions are essential for organizing and reusing code in Python. By defining functions, you can make your code more modular, readable, and maintainable.
+
+---
+
+# QUESTION TIME:
+
+---
+
+**Question 1:**
+What is the purpose of using default parameters in Python functions?
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+Default parameters in Python functions allow you to specify a default value for a parameter, which is used if the function is called without providing a corresponding argument for that parameter. This provides flexibility and allows the function to be called with fewer arguments in certain cases.
+</details>
+
+**Question 2:**
+Explain the concept of variable scope in Python functions.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+Variable scope refers to the visibility of variables within a program. In Python functions, variables defined inside the function are local to that function and cannot be accessed outside of it. However, variables defined outside of any function (global variables) can be accessed from within functions.
+</details>
+
+**Question 3:**
+Write a Python function named `calculate_area` that takes the radius of a circle as an argument and returns the area of the circle. Assume the value of pi is 3.14.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+```python
+def calculate_area(radius):
+    return 3.14 * radius ** 2
+```
+</details>
+
+**Question 4:**
+Implement a Python function named `is_even` that takes an integer as input and returns `True` if it is even, and `False` otherwise.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+```python
+def is_even(n):
+    return n % 2 == 0
+```
+</details>
+
+**Question 5:**
+Write a recursive Python function named `fibonacci` to generate the Fibonacci series up to the nth term.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+```
+</details>
