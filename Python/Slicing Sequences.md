@@ -69,3 +69,85 @@ print(s[::-1])   # Output: nohtyP
 - Commonly used in data processing, text manipulation, and algorithms.
 
 Slicing sequences in Python is a fundamental technique that allows you to efficiently work with collections of data, making it an essential skill for any Python programmer.
+
+## QUESTION TIME
+
+**Question 1:** How do you extract the first three characters from a string in Python?
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+To extract the first three characters from a string, you can use slicing with the syntax `string[:3]`.
+
+Example:
+```python
+s = "Python"
+result = s[:3]
+print(result)  # Output: Pyt
+```
+</details>
+
+**Question 2:** Write a Python code to retrieve every other element from a list starting from the second element.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+You can achieve this by using list slicing with a step size of 2 starting from index 1.
+
+Example:
+```python
+my_list = [1, 2, 3, 4, 5, 6, 7]
+result = my_list[1::2]
+print(result)  # Output: [2, 4, 6]
+```
+</details>
+
+**Question 3:** How would you reverse a string using slicing in Python?
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+To reverse a string using slicing in Python, you can use `[::-1]` as the slicing syntax.
+
+Example:
+```python
+s = "Python"
+reversed_s = s[::-1]
+print(reversed_s)  # Output: nohtyP
+```
+</details>
+
+**Question 4:** Given a list `numbers`, how can you extract the last three elements from the list?
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+You can use negative indices to extract the last three elements from the list.
+
+Example:
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+last_three = numbers[-3:]
+print(last_three)  # Output: [7, 8, 9]
+```
+</details>
+
+**Question 5:** Write a Python code to obtain the middle portion of a string, excluding the first and last character.
+
+<details>
+<summary>Click to reveal solution</summary>
+
+**Answer:**
+To obtain the middle portion of a string, excluding the first and last character, you can use slicing with indices `[1:-1]`.
+
+Example:
+```python
+s = "Python"
+middle_portion = s[1:-1]
+print(middle_portion)  # Output: ytho
+```
+</details>
