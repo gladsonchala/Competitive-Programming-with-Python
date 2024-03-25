@@ -10,7 +10,7 @@ Competitive programming isn't just a hobby; it's a gateway to honing your proble
 
 ### Python Cheatsheets and Crash Courses
 
-We've compiled easy-to-understand cheatsheets and crash courses on Python programming, covering everything from basic syntax to advanced concepts. Whether you're new to Python or need a quick refresher, these resources will have you coding confidently in no time.
+I've compiled easy-to-understand cheatsheets and crash courses on Python programming, covering everything from basic syntax to advanced concepts. Whether you're new to Python or need a quick refresher, these resources will have you coding confidently in no time.
 
 ### Data Structures and Algorithms Demystified
 
@@ -18,17 +18,17 @@ Navigate through detailed explanations and examples of essential data structures
 
 ### Competitive Programming Made Easy
 
-Embark on your competitive programming journey with confidence using our step-by-step guides and practice problems. We provide in-depth solutions and strategies for a variety of competitive programming questions, helping you build the problem-solving prowess needed to excel in coding competitions and technical interviews.
+Embark on your competitive programming journey with confidence using our step-by-step guides and practice problems. I provide in-depth solutions and strategies for a variety of competitive programming questions, helping you build the problem-solving prowess needed to excel in coding competitions and technical interviews.
 
 ## Why Use This Guide?
 
 - **Detailed Explanations**: Our guides provide thorough explanations and examples, making complex concepts easy to grasp.
 - **Practice Problems**: Test your skills with a curated selection of interview and competitive programming questions, complete with detailed solutions.
-- **Contributor Friendly**: We welcome contributions from the community to improve and expand our repository, ensuring it remains a valuable resource for aspiring programmers worldwide.
+- **Contributor Friendly**: I welcome contributions from the community to improve and expand our repository, ensuring it remains a valuable resource for aspiring programmers worldwide.
 
 ## Contribute!
 
-We believe in the power of collaboration and welcome contributions from developers of all skill levels. Whether you're passionate about sharing your knowledge, fixing typos, or adding new content, your contributions are invaluable to the growth of this repository.
+I believe in the power of collaboration and welcome contributions from developers of all skill levels. Whether you're passionate about sharing your knowledge, fixing typos, or adding new content, your contributions are invaluable to the growth of this repository.
 
 Ready to embark on your competitive programming journey? Dive into our resources, start coding, and unlock your full potential as a programmer!
 
