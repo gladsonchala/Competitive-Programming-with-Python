@@ -1,6 +1,7 @@
 # Print In Python and its hidden features
 
 The `print()` function is a versatile tool in Python to output the datas and for debugging purposes. Let's explore various use cases beyond simple text printing:
+
 ---
 
 **1. Print Multiple Items:**
@@ -15,6 +16,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
    Name: Gemechis Age: 21
    ```
 
+---
+
 **2. Formatted String:**
    - Use f-strings to format and include variables directly in the string.
    ```python
@@ -26,12 +29,16 @@ The `print()` function is a versatile tool in Python to output the datas and for
    Your score: 95%
    ```
 
+---
+
 **3. Print to File:**
    - Redirect output to a file instead of the console.
    ```python
    with open("output.txt", "w") as f:
        print("Hello, file!", file=f)
    ```
+
+---
 
 4. **Print Without Newline:**
    - By default, `print()` adds a newline character. Use `end` parameter to change this behavior.
@@ -44,6 +51,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
    Hello, world!
    ```
 
+---
+
 **5. Printing with Separator:**
    - Specify a separator between items in the `print()` function.
    ```python
@@ -54,6 +63,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
    ```
    apple, banana, cherry
    ```
+
+---
 
 **6. Print with Precision:**
    - Control the precision of floating-point numbers.
@@ -77,6 +88,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
    And this is a tab:    Hello!
    ```
 
+---
+
 **8. Printing Progress Bar:**
    - Create a progress bar to visualize the completion of a task.
    ```python
@@ -97,6 +110,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
        progress_bar(i, total_iterations, prefix='Progress:', suffix='Complete', length=50)
    ```
 
+---
+
 **9. Printing with Colors:**
    - Add colors to your terminal output for emphasis or readability.
    ```python
@@ -114,6 +129,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
    print(f"{colors.FAIL}Error!{colors.ENDC}")
    ```
 
+---
+
 **10. Printing ASCII Art:**
     - Display ASCII art for decorative or illustrative purposes.
     ```python
@@ -127,6 +144,8 @@ The `print()` function is a versatile tool in Python to output the datas and for
     """)
     ```
 
+---
+
 **11. Printing with Logging Module:**
     - Utilize the `logging` module for more advanced logging capabilities.
     ```python
@@ -136,10 +155,14 @@ The `print()` function is a versatile tool in Python to output the datas and for
     logging.info("This is an informational message")
     ```
 
+---
+
 **12. Printing Unicode Characters:**
     - Display Unicode characters for internationalization or special symbols.
     ```python
     print("Currency symbols: €, ¥, £")
     ```
+
+---
 
 Experiment with these print() hacks to elevate your Python scripting to new heights!
