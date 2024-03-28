@@ -63,8 +63,6 @@ Choosing the appropriate data type is crucial in interview scenarios, coding gam
 
      - `index()`: this is used to return index of given value. It's used to search item's index by passing its value.
      - `max()` vs `min()`: These are powerful ways to find the maximum & minimum value in the list respectively.
-     - `append()`: This method adds an element to the end of the list. It's handy for dynamically growing a list.
-     - `remove()`: Used to remove the first occurrence of a specified value from the list. It's helpful for eliminating unwanted elements.
      - `sort()`: This method arranges the elements of a list in ascending order by default, or in a specified order if provided. It's great for organizing data.
      - `count()`: Employed to count the number of occurrences of a specified element within the list. It's useful for obtaining frequency statistics.
      - `reverse()`: Reverses the order of elements in the list. It's beneficial for altering the sequence of items.
@@ -72,16 +70,10 @@ Choosing the appropriate data type is crucial in interview scenarios, coding gam
      ```python
      # Examples:
      
-     my_list = [1, 2, 3]
-     my_list.append(4)
-     print(my_list)  # Output: [1, 2, 3, 4]
-    
+     my_list = [1, 2, 3, 4]
      print(my_list.index(2))  # Output: 1
      print(my_list.max())  # Output: 4
      print(my_list.min())  # Output: 1
-
-     my_list.remove(2)
-     print(my_list)  # Output: [1, 3, 4]
     
      my_list.sort()
      print(my_list)  # Output: [1, 3, 4]
@@ -151,6 +143,26 @@ Tuples are immutable data structures in Python, meaning their elements cannot be
    print("John Doe's Grade:", student_grades[('John', 'Doe')])  # Output: 85
    ```
 
+  4. **Life Saver Methods**:
+     List has powerful life saver methods at the time of problem.
+     Here are some of them:
+     - `count()`: Need to know how many times a certain element appears in your tuple? `count()` has got your back, tallying up those occurrences like a pro.
+     - `sorted()`: Now, I know what you're thinking - "But tuples are immutable, how can we sort them?" Fear not, my friend. With `sorted()`, you can sort the elements of your tuple and get back a brand-spanking-new sorted list. It's like magic, but with Python.
+     - `len()`: Alright, I'll admit, `len()` isn't exclusive to tuples. But hey, it's still super useful for finding out how big your tuple is. Knowledge is power, my friend.
+
+     ```python
+     # Examples:
+     
+     my_tuple = (1, 2, 2, 3, 3, 3)
+     count = my_tuple.count(3)
+     print(count)    # Output: 3
+     
+     sorted_tuple = sorted(my_tuple)
+     print(sorted_tuple)  # Output: [1, 2, 2, 3, 3, 3]
+     
+     length = len(my_tuple)
+     print(length)   # Output: 6
+     ```
 Tuples offer a lightweight and efficient way to store fixed collections of elements, return multiple values from functions, and serve as keys in dictionaries for efficient data retrieval.
 
 ### 3. Dictionaries:
@@ -212,6 +224,25 @@ Dictionaries are versatile data structures in Python that excel in scenarios req
 
    print("Character Frequency:", char_frequency)  # Output: {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
    ```
+
+  4. **Life Saver Methods**:
+     List has powerful life saver methods at the time of problem.
+     Here are some of them:
+     - `setdefault()`: This method is a real game-changer. It checks if a key exists in the dictionary. If it does, it returns the corresponding value. If not, it inserts the key with a specified default value and returns that value. It's perfect for handling default values without unnecessary repetition.
+     - `fromkeys()`: Ever needed to initialize a dictionary with a set of keys, all mapped to the same initial value? `fromkeys()` is your solution. It creates a new dictionary with keys from a provided iterable and values set to a specified default value. It's a time-saver for initializing dictionaries.
+     ```python
+     # Examples:
+     
+     my_dict = {'a': 1, 'b': 2}
+     value = my_dict.setdefault('c', 3)
+     print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3}
+     print(value)    # Output: 3
+     
+     keys = ['a', 'b', 'c']
+     default_value = 0
+     new_dict = dict.fromkeys(keys, default_value)
+     print(new_dict)  # Output: {'a': 0, 'b': 0, 'c': 0}
+     ```
 
 Dictionaries offer a powerful mechanism for storing key-value pairs, implementing memoization techniques, and performing frequency counting or occurrence tracking.
 
