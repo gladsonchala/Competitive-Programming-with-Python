@@ -1,4 +1,4 @@
-🔓**Python `.join()` Power and Secret Tips/Tricks**:
+**`.join()` Power and Secret Tips/Tricks**:
 
 1. **String Concatenation with `.join()`**: Instead of using `+` for string concatenation, use `.join()` for better performance, especially with large strings.
    ```python
