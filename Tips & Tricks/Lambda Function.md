@@ -19,7 +19,7 @@ Here's its features and a quick shortcuts to get you up to speed with lambda fun
     return x + y
    ```
 
-3. **Single Expression Only**: Lambda functions can only contain a single expression.
+2. **Single Expression Only**: Lambda functions can only contain a single expression.
 
    Example:
    ```python
@@ -27,7 +27,7 @@ Here's its features and a quick shortcuts to get you up to speed with lambda fun
    add_ten = lambda x: x + 10
    ```
 
-4. **No Statements**: Lambda functions cannot contain statements, only expressions.
+3. **No Statements**: Lambda functions cannot contain statements, only expressions.
 
    Example:
    ```python
@@ -35,7 +35,7 @@ Here's its features and a quick shortcuts to get you up to speed with lambda fun
    greet = lambda name: print(f"Hello, {name}!")
    ```
 
-5. **Anonymous Functions**: Lambda functions are anonymous, meaning they don't have a name.
+4. **Anonymous Functions**: Lambda functions are anonymous, meaning they don't have a name.
 
    Example:
    ```python
@@ -43,7 +43,7 @@ Here's its features and a quick shortcuts to get you up to speed with lambda fun
    is_even = lambda x: x % 2 == 0
    ```
 
-6. **Use Cases**: Lambda functions are handy for short, one-off functions, especially when used with functions like `map()`, `filter()`, and `sorted()`.
+5. **Use Cases**: Lambda functions are handy for short, one-off functions, especially when used with functions like `map()`, `filter()`, and `sorted()`.
 
    Example:
    ```python
